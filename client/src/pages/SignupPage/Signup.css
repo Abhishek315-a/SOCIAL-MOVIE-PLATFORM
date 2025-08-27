@@ -1,0 +1,57 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;            
+    width: 100vw;
+}
+.box{
+    height: 500px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1.3rem;
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.15);
+}
+.title{
+    padding: .2rem;
+    text-align: center;
+}
+.title>span{
+    font-size: 2rem;
+}
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    gap: .4rem;
+}
+.sub-container>label{
+    font-size: 1.3rem;
+
+}
+.label-class{
+    display: flex;
+    flex-direction: row;
+    gap: .6rem;
+    align-items: center;
+}
+.input-box{
+    padding: .4rem;
+    border-radius: .3rem;
+    min-width: 200px;
+}
+.btn-box{
+    width: 100%;
+    margin-top: 1rem;
+}
+.btn{
+    width: 100%;
+    padding: .3rem;
+    border-radius: .3rem;
+    font-size: 1rem;
+    min-width: 210px;
+}
+.btn-login>a{
+    color: white;
+}

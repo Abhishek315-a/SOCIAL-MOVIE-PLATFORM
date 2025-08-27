@@ -1,0 +1,127 @@
+/* Sidebar container */
+.right-sidebar {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-left: 1rem;
+}
+
+/* Search bar */
+.search-input-btn {
+  position: relative;
+  width: 100%;
+  margin-top: 0.5rem;
+}
+.search-input-area {
+  width: 100%;
+  padding-left: 35px;
+  height: 40px;
+  border: 1px solid #333;
+  border-radius: 2rem;
+  font-size: 1rem;
+  color: white;
+  background-color: #000;
+}
+.search-input-area:focus {
+  border-color: #1da1f2;
+  outline: none;
+}
+.search-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  color: #888;
+  pointer-events: none;
+}
+
+/* Follow box */
+.follow-list-container {
+  background-color: #171515;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.follow-list-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+.main-follow-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .6rem 0;
+  border-bottom: 1px solid #333;
+}
+.main-follow-list:last-child {
+  border-bottom: none;
+}
+.follow-list {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.follow-username p {
+  font-size: 0.9rem;
+  color: gray;
+}
+.follow-btn {
+  padding: 0.3rem 1rem;
+  background-color: white;
+  color: black;
+  font-size: 0.9rem;
+  border-radius: 2rem;
+  border: none;
+  cursor: pointer;
+}
+.follow-btn:hover {
+  background-color: #ddd;
+}
+.show-more {
+  color: #1da1f2;
+  cursor: pointer;
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+}
+
+/* Trends box */
+.trends-container {
+  background-color: #171515;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.trends-container h2 {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.trend-item {
+  padding: 0.6rem 0;
+  border-bottom: 1px solid #333;
+}
+.trend-item:last-child {
+  border-bottom: none;
+}
+.trend-category {
+  font-size: 0.8rem;
+  color: gray;
+}
+.trend-item h3 {
+  font-size: 1rem;
+  margin: 0.2rem 0;
+}
+.trend-tweets {
+  font-size: 0.8rem;
+  color: gray;
+}
+
+/* ✅ Responsive */
+@media screen and (max-width: 1024px) {
+  .right-sidebar {
+    width: 30%;
+  }
+}
+@media screen and (max-width: 768px) {
+  .right-sidebar {
+    display: none; /* Hide sidebar on small screens */
+  }
+}

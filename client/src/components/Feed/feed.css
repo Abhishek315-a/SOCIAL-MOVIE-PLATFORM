@@ -1,0 +1,74 @@
+.pura-feed{
+    width: 90%;
+    border-left: .1px solid gray;
+    border-right: .1px solid gray;
+    border-bottom: .1px solid gray;
+    margin-left: 1.9rem;
+}
+.sticky-create-post{
+    display: flex;
+    justify-content: space-around;
+    color: gray;
+    width: 100%;
+    margin: auto;
+    border-bottom: .01px solid gray;
+    border-top: none;
+    
+}
+.sticky-create-post>div>span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.feed-nav{
+    width: 50%;
+    padding: .5rem;
+    text-align: center;
+    cursor: pointer;
+}
+.feed-nav:hover{
+    background-color: gray;
+    color: white;
+}
+.main-feed{
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+    border-bottom: .1px solid rgb(105, 99, 99);
+    justify-content: center;
+}
+.input-post{
+    outline: none;
+    border: none;
+    background-color: black;
+    color: white;
+    font-size: 1.2rem;
+    width: 100%;
+    resize: none;
+    overflow: hidden;
+}
+.post-all-btn{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+.post-button{
+    border: none;
+    background-color: white;
+    color: black;
+    border-radius: 1rem;
+    padding: .3rem .8rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.post-button:hover{
+    background-color: rgb(233, 219, 219);
+}
+.all-tweet{
+    width: 90%;
+    border: .1px solid gray;
+    margin-left: 1.9rem;
+}

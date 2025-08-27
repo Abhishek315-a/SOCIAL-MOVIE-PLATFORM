@@ -1,0 +1,42 @@
+.person-detail-container {
+  padding: 2rem;
+  color: white;
+}
+
+.person-header {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.person-image {
+  width: 250px;
+  border-radius: 10px;
+}
+
+.person-info {
+  max-width: 600px;
+}
+
+.known-for-section {
+  margin-top: 2rem;
+}
+
+.known-for-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+}
+
+.known-for-card {
+  min-width: 200px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px){
+    .person-header{
+      display: flex;
+      flex-direction: column;
+      
+    }
+}

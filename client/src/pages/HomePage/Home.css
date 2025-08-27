@@ -1,0 +1,148 @@
+/* Base styles */
+.poster-image {
+    height: 600px;
+    position: relative;
+}
+
+.poster-image > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Overlay styles */
+.poster-image_overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 2rem;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+    color: white;
+    transition: opacity 0.3s ease;
+    opacity: 1;
+}
+
+/* Text content */
+.poster-image_title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.poster-image_runtime {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+}
+
+.poster-image_rating {
+    margin-left: 1.5rem;
+    color: gold;
+}
+
+.poster-image_description {
+    font-size: 1rem;
+    font-style: italic;
+    max-width: 90%;
+    line-height: 1.4;
+}
+
+/* Hover effect for desktop only */
+@media (hover: hover) {
+    .poster-image_overlay:hover {
+        opacity: 1;
+    }
+}
+
+/* Tablet responsiveness */
+@media (max-width: 768px) {
+    .poster-image {
+        height: 450px;
+    }
+
+    .poster-image_overlay {
+        padding: 1.5rem;
+        height: 60%;
+    }
+
+    .poster-image_title {
+        font-size: 2rem;
+    }
+
+    .poster-image_runtime {
+        font-size: 1.1rem;
+    }
+
+    .poster-image_description {
+        font-size: 0.9rem;
+        max-width: 100%;
+    }
+}
+
+/* Mobile responsiveness */
+@media (max-width: 480px) {
+    .poster-image {
+        height: 300px;
+    }
+
+    .poster-image_overlay {
+        padding: 1rem;
+        height: 50%;
+    }
+
+    .poster-image_title {
+        font-size: 1.4rem;
+    }
+
+    .poster-image_runtime {
+        font-size: 1rem;
+    }
+
+    .poster-image_description {
+        font-size: 0.8rem;
+        max-width: 100%;
+    }
+
+    .poster-image_rating {
+        margin-left: 1rem;
+    }
+}
+
+
+.tv-scroll-section > span {
+    font-size: 1.4rem;
+    font-weight: 600;
+    display: block;
+    margin-bottom: 1rem;
+    padding-left: 0.5rem;
+    margin-top: 1rem;
+}
+.tv-scroll-section{
+    max-width: 1300px;
+    margin: auto;
+}
+.tv-horizontal-scroll {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 0.5rem;
+
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE */
+}
+
+.tv-horizontal-scroll::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+.tv-horizontal-scroll > * {
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+}
+

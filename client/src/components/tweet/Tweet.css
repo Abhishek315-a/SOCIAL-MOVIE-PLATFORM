@@ -1,0 +1,78 @@
+.tweet-head{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    padding: 1rem;
+}
+.tweet-username{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    
+}
+.tweet-body{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+}
+.tweet-engagement {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;  /* center everything */
+    align-items: center;
+    gap: 3rem; /* spacing between icons */
+    width: 100%; /* full width so it’s centered */
+    margin-top: 0.5rem;
+}
+
+.real-engage-heart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.real-engage-comment{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.real-engage-save{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+.icon-background-heart{
+    padding: .3rem;
+}
+.icon-background-comment{
+    padding: .3rem;
+}
+.icon-background-bookmark{
+    padding: .3rem;
+}
+.icon-background-delete{
+    padding: .3rem;
+}
+.icon-background-heart:hover{
+    background-color: rgb(228, 12, 63);
+    border-radius: 5rem;  
+}
+.icon-background-comment:hover{
+    background-color: rgb(71, 99, 96);
+    border-radius: 5rem;  
+}
+.icon-background-bookmark:hover{
+    background-color: rgb(231, 165, 22);
+    border-radius: 5rem;  
+}
+.icon-background-delete:hover{
+    background-color: rgb(255, 0, 0);
+    border-radius: 5rem;  
+}
