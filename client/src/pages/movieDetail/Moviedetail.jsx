@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "./Moviedetail.css";
+import "./MovieDetail.css";
 import { useNavigate } from "react-router-dom";
 import { MdSend } from "react-icons/md";
 import { toast } from "react-toastify";
