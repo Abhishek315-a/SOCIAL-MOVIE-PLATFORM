@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import Card from '../../components/card/Card';
 import Cardtv from '../../components/card/Cardtv';
 import CardPerson from '../../components/card/CardPerson'; 
-import './SearchPage.css'; 
+import './searchPage.css'; 
 
 const SearchPage = () => {
   const [searchType, setSearchType] = useState('movie'); // movie | tv | person
