@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./UpdatePass.css";
 import { toast } from "react-toastify";
-import { REACT_APP_API_KEY } from "../../utils/constant";
+const REACT_APP_API_KEY = import.meta.env.VITE_API_BASE_URL;
 
 const UpdatePass = () => {
   const [formData, setFormData] = useState({

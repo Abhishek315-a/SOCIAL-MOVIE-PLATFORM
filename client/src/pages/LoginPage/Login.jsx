@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 import { useDispatch } from "react-redux";
 import "./Login.css";
 import { getUser } from "../../redux/userSlice";
-import { REACT_APP_API_KEY } from "../../utils/constant";
+const REACT_APP_API_KEY = import.meta.env.VITE_API_BASE_URL;
 const Login = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();

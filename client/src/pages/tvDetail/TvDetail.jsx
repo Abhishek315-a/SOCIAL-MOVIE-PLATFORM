@@ -4,7 +4,7 @@ import "./tvDetail.css";
 import Cardtv from "../../components/card/Cardtv";
 import { MdSend } from "react-icons/md";
 import { toast } from "react-toastify";
-import { REACT_APP_API_KEY } from "../../utils/constant";
+const REACT_APP_API_KEY = import.meta.env.VITE_API_BASE_URL;
 
 const TvDetail = () => {
   const [currentTvDetail, setCurrentTvDetail] = useState([]);

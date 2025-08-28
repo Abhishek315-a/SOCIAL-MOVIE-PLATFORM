@@ -2,7 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./FavouritePage.css";
 import Skeleton, { SkeletonTheme } from "react-loading-skeleton";
 import { Link } from "react-router-dom";
-import { REACT_APP_API_KEY } from "../../utils/constant";
+const REACT_APP_API_KEY = import.meta.env.VITE_API_BASE_URL;
+
 
 const FavouritePage = () => {
   const [favouriteMovie, setFavouriteMovie] = useState([]);

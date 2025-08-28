@@ -7,7 +7,7 @@ import { toast } from "react-toastify";
 import { Link } from "react-router-dom";
 
 import Card from "../../components/card/Card";
-import { REACT_APP_API_KEY } from "../../utils/constant";
+const REACT_APP_API_KEY = import.meta.env.VITE_API_BASE_URL;
 
 const Moviedetail = () => {
   const [currentMovieDetail, setCurrentMoviedetail] = useState([]);

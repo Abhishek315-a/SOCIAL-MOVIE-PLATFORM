@@ -3,7 +3,7 @@ import "./Signup.css";
 import { Link, useNavigate } from "react-router-dom";
 import { FaEnvelope, FaLock, FaUser } from "react-icons/fa";
 import { toast } from "react-toastify";
-import { REACT_APP_API_KEY } from "../../utils/constant";
+const REACT_APP_API_KEY = import.meta.env.VITE_API_BASE_URL;
 
 const Signup = () => {
   const navigate = useNavigate();
