@@ -53,6 +53,7 @@
     font-size: 1rem;
     min-width: 210px;
     font-weight: 500;
+    cursor: pointer;
 }
 .btn-signup>a{
     color: rgb(255, 255, 255);

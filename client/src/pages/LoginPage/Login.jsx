@@ -44,12 +44,11 @@ const Login = () => {
     });
 
     const data = await res.json(); // ✅ parse response
+
     const { success, message, token, name, user } = data;
 
     if (success && token && name && user) {
-      // ✅ now it's safe to use
       dispatch(getUser(user)); // store user in redux
-
       localStorage.setItem("token", token);
       localStorage.setItem("email", formData.email);
       localStorage.setItem("name", name);
@@ -64,6 +63,7 @@ const Login = () => {
     toast.error(error.message || "Something went wrong");
   }
 };
+
 
   return (
     <div className="login-container">

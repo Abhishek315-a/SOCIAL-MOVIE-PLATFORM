@@ -52,7 +52,7 @@ const Feed = () => {
   }
 
   return (
-    <div style={{ width: "55%" }}>
+    <div className="feed-container">
       <div className="pura-feed">
         <div className="sticky-create-post">
           <div onClick={handleForYou}  className="feed-nav">
